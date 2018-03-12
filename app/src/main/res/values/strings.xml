@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Uranai-sha</string>
     <string name="greatings">Ask me a questions</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings">Nothing to do here</string>
+    <string name="bsck_button">Return</string>
 </resources>
