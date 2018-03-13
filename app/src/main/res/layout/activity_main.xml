@@ -4,8 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="bottom"
     android:background="@color/colorPrimaryDark"
     android:backgroundTint="@color/colorPrimaryDark"
+    android:clickable="false"
+    android:touchscreenBlocksFocus="false"
     tools:context="com.example.olga_kondratenko.androidapplication.MainActivity">
 
     <TextView
@@ -30,7 +33,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Get a prediction!"
+        android:text="@string/explanation"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"

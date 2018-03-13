@@ -8,29 +8,28 @@
     android:background="@color/colorPrimaryDark">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/languageView"
+        android:layout_width="369dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="8dp"
         android:freezesText="true"
-        android:text="@string/settings"
-        android:textAlignment="center"
-        android:textAllCaps="true"
+        android:text="@string/settings_language"
+        android:textAppearance="@style/TextAppearance.AppCompat"
         android:textColor="@color/colorPrimary"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         android:textCursorDrawable="@android:color/holo_blue_bright"
-        android:textSize="@android:dimen/notification_large_icon_height"
-        android:textStyle="bold"
-        android:tooltipText="@string/settings" />
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/backButton"
         android:layout_width="107dp"
         android:layout_height="109dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="64dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:background="@drawable/button"
         android:onClick="returnBack"
         android:text="@string/bsck_button"
@@ -40,7 +39,67 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/englishButton"
+        style="@android:style/Widget.DeviceDefault.Light.CompoundButton.RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/background_light"
+        android:onClick="chooseLanguage"
+        android:text="@string/settings_language_en"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/ukrainianButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/languageView" />
+
+    <RadioButton
+        android:id="@+id/ukrainianButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@android:color/background_light"
+        android:checked="false"
+        android:onClick="chooseLanguage"
+        android:text="@string/settings_language_ua"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/languageView" />
+
+    <TextView
+        android:id="@+id/musicView"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/settings_sound"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/englishButton" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="97dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="24dp"
+        android:textOff="@string/settings_sound_off"
+        android:textOn="@string/settings_sound_on"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/musicView"
+        app:layout_constraintTop_toBottomOf="@+id/ukrainianButton" />
 
 </android.support.constraint.ConstraintLayout>
