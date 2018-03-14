@@ -10,5 +10,5 @@
     <string name="settings_sound">Музика</string>
     <string name="settings_sound_on">Є</string>
     <string name="settings_sound_off">Нема</string>
-    <string name="bsck_button">Повернутися</string>
+    <string name="back_button">Повернутися</string>
 </resources>

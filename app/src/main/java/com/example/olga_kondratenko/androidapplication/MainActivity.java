@@ -1,9 +1,14 @@
 package com.example.olga_kondratenko.androidapplication;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +23,7 @@ import java.util.Locale;
 import static constants.names.APP_PREFERENCES;
 import static constants.names.APP_PREFERENCES_LANGUAGE;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 private PredicationGenerator predicationGenerator;
     private SharedPreferences languageSettings;
     private Logger log = Logger.getLogger(MainActivity.class);
@@ -32,6 +37,8 @@ private PredicationGenerator predicationGenerator;
         languageSettings = getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
         predicationGenerator = new PredicationGenerator(getBaseContext());
     }
+
+
 
     @Override
     protected void onRestart(){

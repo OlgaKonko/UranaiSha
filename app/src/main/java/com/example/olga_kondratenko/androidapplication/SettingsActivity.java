@@ -26,8 +26,8 @@ public class SettingsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        log.info("Settings activity create");
-        System.out.println("Settings activity create");
+        log.info("settings_backgroung activity create");
+        System.out.println("settings_backgroung activity create");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
        checkLanguageOptions();
@@ -35,14 +35,14 @@ public class SettingsActivity extends Activity {
 
     @Override
     protected void onRestart() {
-        log.info("Settings activity restart");
-        System.out.println("Settings activity restart");
+        log.info("settings_backgroung activity restart");
+        System.out.println("settings_backgroung activity restart");
         super.onRestart();
     }
 
     public void returnBack(View view) {
-        log.info("Settings activity close");
-        System.out.println("Settings activity close");
+        log.info("settings_backgroung activity close");
+        System.out.println("settings_backgroung activity close");
         finish();
     }
 

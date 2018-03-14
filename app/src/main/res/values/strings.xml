@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Uranai-sha</string>
     <string name="greatings">Ask me a questions</string>
+    <string name="glass_button"> /? </string>
     <string name="explanation">And I tell you a truth! Maybe.</string>
     <string name="settings_title">Settings</string>
     <string name="settings_language">Choose a language</string>
@@ -10,5 +11,5 @@
     <string name="settings_sound">Music</string>
     <string name="settings_sound_on">On</string>
     <string name="settings_sound_off">Off</string>
-    <string name="bsck_button">Return</string>
+    <string name="back_button">Return</string>
 </resources>
