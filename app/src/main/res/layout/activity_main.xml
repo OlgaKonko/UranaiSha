@@ -12,43 +12,43 @@
 
     <com.example.olga_kondratenko.androidapplication.GlowText
         android:id="@+id/MainText"
-        android:layout_width="374dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="16dp"
-        android:shadowColor="@android:color/background_light"
-        android:shadowRadius="20"
-        android:text="@string/greatings"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/colorPrimaryDark"
-        android:textCursorDrawable="@android:color/holo_blue_bright"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <com.example.olga_kondratenko.androidapplication.GlowText
-        android:id="@+id/Predication"
-        android:layout_width="264dp"
-        android:layout_height="141dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="335dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="20dp"
         android:shadowColor="@android:color/background_light"
         android:shadowRadius="20"
         android:text="@string/explanation"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textCursorDrawable="@android:color/holo_blue_bright"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Predication" />
+
+
+    <com.example.olga_kondratenko.androidapplication.GlowText
+        android:id="@+id/Predication"
+        android:layout_width="264dp"
+        android:layout_height="175dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:shadowColor="@android:color/background_light"
+        android:shadowRadius="20"
+        android:text="@string/greatings"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/GlassButton"
-        android:layout_width="217dp"
+        android:layout_width="210dp"
         android:layout_height="210dp"
-        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -56,8 +56,8 @@
         android:contentDescription="@string/glass_button"
         android:onClick="onClick"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/Predication"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainText" />
 
@@ -75,5 +75,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/Predication" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="186dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progress"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/Predication"
+        app:layout_constraintEnd_toEndOf="@+id/Predication"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/Predication"
+        app:layout_constraintTop_toTopOf="@+id/Predication" />
 
 </android.support.constraint.ConstraintLayout>

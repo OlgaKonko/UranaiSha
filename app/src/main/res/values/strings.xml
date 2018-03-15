@@ -2,7 +2,9 @@
     <string name="app_name">Uranai-sha</string>
     <string name="greatings">Ask me a questions</string>
     <string name="glass_button"> /? </string>
-    <string name="explanation">And I tell you a truth! Maybe.</string>
+    <string name="explanation">and I tell you a truth! Maybe.</string>
+    <string name="waiting"></string>
+    <string name="new_greatings">One more question?</string>
     <string name="settings_title">Settings</string>
     <string name="settings_language">Choose a language</string>
     <string name="settings_language_re">Руский</string>

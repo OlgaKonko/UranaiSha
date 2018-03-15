@@ -8,6 +8,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import org.apache.log4j.Logger;
 
@@ -106,5 +107,8 @@ public class SettingsActivity extends Activity {
         Configuration configuration = new Configuration();
         configuration.locale = locale;
         getBaseContext().getResources().updateConfiguration(configuration, null);
+        recreate();
+        TextView languageText = findViewById(R.id.languageView);
+        languageText.setText(R.string.settings_language);
     }
 }

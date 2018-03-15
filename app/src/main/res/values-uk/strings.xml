@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Уранай-ша</string>
     <string name="greatings">Запитай в мене</string>
-    <string name="explanation">І я відкрию тобі істину! Можливо.</string>
+    <string name="explanation">і я відкрию тобі істину! Можливо.</string>
+    <string name="new_greatings">Ще одне питання?</string>
     <string name="settings_title">Налаштування</string>
     <string name="settings_language">Виберіть мову</string>
     <string name="settings_language_re">Руский</string>
